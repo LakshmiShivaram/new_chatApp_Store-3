@@ -13,8 +13,8 @@ import { addChatOnLoad } from '../store/chat_load.action';
   styleUrls: ['./chat-list.component.css']
 })
 export class ChatListComponent implements OnInit {
-  contactsForDisplay$: Observable<ChatData[]>;
-  messageDisplay$: Observable<chatActionState[]>;
+  public contactsForDisplay$: Observable<ChatData[]>;
+  public messageDisplay$: Observable<chatActionState[]>;
 
   constructor(
     private chatService: ChatList,

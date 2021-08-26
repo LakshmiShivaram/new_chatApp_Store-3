@@ -15,9 +15,9 @@ import { addChatOnSave } from '../store/chat_store.action';
   styleUrls: ['./chat-display.component.css']
 })
 export class ChatDisplayComponent implements OnInit {
-  messageForm: FormGroup;
-  selectedChatData: ChatData;
-  id: number;
+  public messageForm: FormGroup;
+  public selectedChatData: ChatData;
+  public id: number;
 
   /* taken from store */
   chatForDisplay: string[] = [];
