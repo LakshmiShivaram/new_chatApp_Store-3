@@ -1,0 +1,50 @@
+<div class="card maincardlist">
+  <div class="card cardhead">
+    <div class="row">
+      <div class="col-sm-2 chatimg">
+        <img
+          [src]="selectedChatData?.sender.profileImage"
+          width="50"
+          height="50"
+        />
+      </div>
+      <div class="col-sm-10 chatdet">
+        <h4 id="chatname">{{selectedChatData?.sender.name}}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card cardmsg">
+    <div>
+      <p class="receivermsg">{{selectedChatData?.content}}</p>
+    </div>
+    <div *ngFor="let msg of chatForDisplay;">
+      <p class="sendermsg">
+        {{msg}}
+      </p>
+    </div>
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="saveMessage()" [formGroup]="messageForm">
+      <div class="form-group row mb-2">
+        <div class="col-md-8">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Type Message Here"
+            formControlName="message"
+          />
+        </div>
+      </div>
+      <button class="btn btn-primary mr-3" style="width:80px;" type="submit">
+        Send
+      </button>
+      <button
+        class="btn btn-secondary mr-3"
+        style="width:80px;"
+        (click)="goBack()"
+      >
+        back
+      </button>
+    </form>
+  </div>
+</div>

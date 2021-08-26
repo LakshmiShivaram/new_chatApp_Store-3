@@ -1,0 +1,23 @@
+.maincard {
+  margin: 1%;
+}
+.panel {
+  margin: 1%;
+}
+.chatcards {
+  margin: 1%;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.chatcards img {
+  border-radius: 50px;
+}
+.text {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  font-size: small;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
