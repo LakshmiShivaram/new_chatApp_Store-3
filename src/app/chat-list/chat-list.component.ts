@@ -4,8 +4,8 @@ import { select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { chatActionState, MyAppState } from '../app.state';
 import { ChatData } from '../chat-data';
-import { ChatList } from '../chat-list.service';
-import { addChatOnLoad } from '../store/chat-load.action';
+import { ChatList } from '../chat.service';
+import { addChatOnLoad } from '../store/chat_load.action';
 
 @Component({
   selector: 'app-chat-list',

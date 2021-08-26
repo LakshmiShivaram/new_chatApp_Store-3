@@ -10,8 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { chatLoadReducer } from './store/chat-load.reducer';
-import { chatSaveReducer } from './store/chat-store.reducer';
+import { chatLoadReducer } from './store/chat_load.reducer';
+import { chatSaveReducer } from './store/chat_store.reducer';
 
 const routes: Routes = [
   { path: 'contacts', component: ChatListComponent },

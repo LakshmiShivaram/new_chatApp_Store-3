@@ -1,6 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 import { ChatData } from '../chat-data';
-import { addChatOnLoad } from './chat-load.action';
+import { addChatOnLoad } from './chat_load.action';
 
 const initialStateOnload: ChatData[] = [];
 export const chatLoadReducer = createReducer(
